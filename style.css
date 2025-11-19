@@ -1,0 +1,217 @@
+/* Estilos Generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Encabezado (Header) */
+header {
+    background: #2c3e50; /* Azul oscuro */
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #77aaff 3px solid; /* Borde azul claro */
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    padding-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+/* Barra de Navegación (Nav) */
+nav {
+    background: #34495e; /* Azul grisáceo */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: sticky; /* Fija la barra de navegación al hacer scroll */
+    top: 0;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    padding: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #77aaff; /* Cambio de color al pasar el ratón */
+}
+
+/* Contenido Principal (Main) y Secciones */
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+    background: #fff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+section h2 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #77aaff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+section h3 {
+    color: #34495e;
+    margin-top: 30px;
+}
+
+/* Imágenes */
+.image-container {
+    text-align: center;
+    margin: 30px 0;
+    background-color: #fcfcfc;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.responsive-img {
+    max-width: 90%; /* Asegura que la imagen no se desborde */
+    height: auto;
+    display: block; /* Elimina espacio extra debajo de la imagen */
+    margin: 0 auto; /* Centra la imagen */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.image-container small {
+    display: block;
+    margin-top: 10px;
+    color: #555;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+/* Galería de Imágenes */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Columnas responsivas */
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 180px; /* Altura fija para las imágenes de la galería */
+    object-fit: cover; /* Ajusta la imagen sin distorsionarla */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-img:hover {
+    transform: scale(1.03); /* Efecto de zoom al pasar el ratón */
+}
+
+
+/* Listas */
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Pie de página (Footer) */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #2c3e50;
+    color: #fff;
+    margin-top: 30px;
+    border-top: #77aaff 3px solid;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    header h1 {/* Estilos para el Logo */
+.logo-container {
+    text-align: center; /* Centra el logo si es un elemento de bloque o la imagen dentro */
+    padding: 10px 0; /* Espaciado interno arriba y abajo */
+}
+
+.logo {
+    max-width: 150px; /* Tamaño máximo del logo. Ajusta este valor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: inline-block; /* Permite que el margen auto lo centre si el padre es text-align: center */
+    margin-bottom: 10px; /* Espacio entre el logo y el subtítulo */
+}
+
+/* Puedes ajustar el padding del header si el logo lo necesita */
+header {
+    /* ... (tus estilos existentes para header) ... */
+    padding-top: 15px; /* Ajustado para que el logo no quede pegado arriba */
+    padding-bottom: 15px; /* Ajustado para dar espacio debajo del logo/párrafo */
+}
+
+/* Opcional: Si quieres mover la descripción del header */
+header p {
+    /* ... (tus estilos existentes para el párrafo) ... */
+    font-size: 1em; /* Quizás un poco más pequeño si el logo es grande */
+    margin-top: 10px; /* Espacio entre el logo y el párrafo */
+}
+        font-size: 1.8em;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 8px 0;
+    }
+
+    main {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .
